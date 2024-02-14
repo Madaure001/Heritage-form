@@ -1,0 +1,181 @@
+<!-- file: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <Body 
+      background="https://images.pexels.com/photos/3536216/pexels-photo-3536216.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load">
+    <meta charset="UTF-8">
+    <title>Heritage Form by Thulani Madaure</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">
+      Heritage Survey Form
+    </h1>
+    <p id="description">
+        Thank you for helping us improve the platform. Please fill out this form. 
+    </p>
+    <form 
+      method="post" 
+      id="survey-form" 
+      action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label">
+          Full Name 
+          <input 
+            id="name" 
+            name="name-label" 
+            type="text" 
+            placeholder="Enter your name"
+            required />
+        </label>        
+        <label id="email-label">
+          Email 
+          <input 
+            id="email" 
+            name="email-label" 
+            type="email" 
+            placeholder="Enter your email" 
+            required />
+        </label>
+        <label id="number-label">Age
+            <sup> (optional)</sup>
+            <input 
+            id="number" 
+            type="number" 
+            name="number-label" 
+            min="13" 
+            max="120" 
+            placeholder="Age"/>
+        </label>
+        <label for="location">
+          Where do you live?
+          <select 
+            id="dropdown" 
+            name="location">
+            <option value="">
+              (select one)</option>
+            <option value="1">
+              City</option>
+            <option value="2">
+              Small Town</option>
+            <option value="3">
+              Rural area</option>
+            <option value="4">
+              Informal Settlement</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label> Would you mind relocating?</label>
+        <label for="Definitely">
+          <input 
+            value="Definitely" 
+            type="radio" 
+            name="Relocating-choice" 
+            class="inline" 
+            checked/> 
+            Definitely</label>
+        <label for="Maybe">
+          <input 
+            value="Maybe" 
+            type="radio" 
+            name="Relocating-choice" 
+            class="inline" /> 
+            Maybe</label>
+        <label for="No">
+          <input 
+            value="No" 
+            type="radio" 
+            name="Relocating-choice" 
+            class="inline" /> No</label>
+        
+      </fieldset>
+      <fieldset>
+        <label 
+          for="reasons-label" 
+          name="reasons-label">
+          Reasons for relocating? 
+          <sup>(check all that apply)</sup>
+        </label>
+        <label 
+          for="reasons-label" 
+          name="reasons-label">
+          <input 
+            value="reasons-label" 
+            type="checkbox" 
+            required 
+            name="reasons-label" 
+            class="inline" />
+              Higher paying job</label>
+        <label 
+        for="reasons-label" 
+        name="reasons-label">
+          <input 
+            value="reasons-label" 
+            type="checkbox" 
+            required 
+            name="reasons-label" 
+            class="inline" />
+            Pursuing a better life
+        </label>
+        <label 
+          for="reasons-label"
+          name="reasons-label">
+          <input 
+            value="reasons-label" 
+            type="checkbox" 
+            required 
+            name="reasons-label" 
+            class="inline" />
+              Family relocation
+        </label>
+        <label 
+          for="reasons-label"
+          name="reasons-label">
+          <input 
+            value="reasons-label" 
+            type="checkbox" 
+            required 
+            name="reasons-label" 
+            class="inline" />
+              Pursuing a career/studies
+        </label>
+        <label 
+          for="reasons-label"
+          name="reasons-label">
+          <input 
+            value="reasons-label" 
+            type="checkbox" 
+            required 
+            name="reasons-label" 
+            class="inline" />
+              Adventure
+        </label>
+        <label 
+          for="reasons-label" 
+          name="reasons-label">
+          <input 
+            value="reasons-label" 
+            type="checkbox" 
+            required 
+            name="reasons-label" 
+            class="inline" />
+              Marraige
+        </label>
+        </label>
+        <label for="comments">
+          Any additional comments or suggestions?
+          <textarea 
+            id="comments" 
+            name="comments" 
+            rows="6" 
+            cols="90" 
+            placeholder="Enter your comment here">
+          </textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" />
+    </form>
+  </body>
+</html>
